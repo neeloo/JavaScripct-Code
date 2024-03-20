@@ -4,9 +4,9 @@
 // console.log(x);   //x is undefind
 
 var x=9;
-// function getname(){
-//     console.log("namste javascripct");
-// }
+function getname(){
+    console.log("namste javascripct");
+}
 
   //given output and value of x
 getname();
@@ -15,6 +15,6 @@ console.log(getname);
 
 
 
-var getname = () =>{
-    console.log("namste javascripct");
-}
+// var getname = () =>{
+//     console.log("namste javascripct");
+// }
