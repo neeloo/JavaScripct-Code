@@ -11,3 +11,7 @@ console.log(a.isPrototypeOf(c))     //false
 
 console.log(a == b)                //false (beacuse b is inheritance of a  not equal of a)
 console.log(a === b)              //false (strong check)
+
+let num=10;
+console.log(num.__proto__);
+console.log("nimg".__proto__)
