@@ -24,3 +24,6 @@ console.log(p1.firstname);
 
 p1.firstname='smir singh'
 console.log(p1)
+
+
+
