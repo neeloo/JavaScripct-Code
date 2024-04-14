@@ -19,7 +19,7 @@ class Counter {
 
     }
     count() {
-        this.init += this.delta;
+        this.value += this.delta;
     }
 
 }
