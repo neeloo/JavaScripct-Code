@@ -13,10 +13,12 @@ const ul = document.getElementById('fizzbuzz');
  */
 
 
+/*
 print.onclick = function () {
     const start = Date.now();
 
     for (let i = 1; i <= count.value; i++) {
+
         if (i % 15 == 0) {
             // let li = document.createElement("li");
             // li.appendChild(document.createTextNode("fizzbuzz"));
@@ -24,6 +26,9 @@ print.onclick = function () {
 
             // or write like that
             ul.innerHTML += "<li>fizzbuzz</li>";
+
+
+
         }
         else if (i % 3 == 0) {
 
@@ -53,6 +58,28 @@ print.onclick = function () {
 
     console.log('time =', Date.now() - start);
 
+}
+*/
+
+print.onclick = function () {
+    for (let j = 1; j <= count.value; j++) {
+        let li = document.createElement("li");
+        let text = "";
+
+        if (j % 3 ==0) {
+            text += "fizz";
+        }
+
+        if (j % 5 == 0) {
+            text += "buzz";
+        }
+        if (text == "") {
+            text = j;
+        }
+        li.innerText = text;
+        ul.appendChild(li);
+
+    }
 }
 
 
