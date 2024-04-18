@@ -1,9 +1,16 @@
 let ladder = {
     step: 0,
-    up() { this.step++; },
-    down() { this.step--; },
+    up() {
+        this.step++;
+        return this;
+    },
+    down() {
+        this.step--;
+        return this;
+    },
     showstep: function () {
         console.log(this.step);
+        return this;
 
     }
 };
