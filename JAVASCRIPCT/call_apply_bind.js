@@ -43,7 +43,7 @@
 //     team: "Iron man"
 // }
 
-cap.pteam.apply(ironman, ["nathsa", "loki", "thor", "caption america", "spider man"]);
+//cap.pteam.apply(ironman, ["nathsa", "loki", "thor", "caption america", "spider man"]);
 
 //   o/p->i am  tony and member of team  Iron man 
 // i am working with  nathsa and loki and thor,caption america,spider man
@@ -67,4 +67,9 @@ let ironman = {
 let noteam = cap.pteam.bind(ironman);
 noteam("nathasa","samira", "lokesh");
 
+// i am  tony and member of team  Iron man 
+//i am working with  nathasa and samira and lokesh
 
+noteam("nayra","fatema","anuj");
+// i am  tony and member of team  Iron man call_apply_bind.js:58:17
+//i am working with  nayra and fatema and anuj
