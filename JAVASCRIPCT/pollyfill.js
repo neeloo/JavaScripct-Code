@@ -75,3 +75,18 @@ cap.pteam.apply(ironman, ["samir", "sma"])
 let pt = cap.pteam.bind(ironman);
 pt("asma", "kirti");
 pt("aakaskh", "anusaka");
+
+
+
+Function.prototype.mybind=function(obj){
+    const req=this;
+    return function(...arg){
+        req.call(obj,...arg);
+    }
+}
+const binf=cap.pteam.mybind(ironman);
+binf("sahjaha","mumtaj");
+
+
+const bf=cap.pteam.bind(ironman);
+bf("nasa","drdo");
