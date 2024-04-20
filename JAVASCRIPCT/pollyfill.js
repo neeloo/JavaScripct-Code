@@ -10,12 +10,23 @@ let ironman={
     team:"iron man"
 }
 //build pollyfills
-Function.prototype.mycall=function(){
-    console.log("hi i am invoked");
-}
-cap.pteam.mycall();
+// Function.prototype.mycall=function(){
+//     console.log("hi i am invoked");
+// }
+// cap.pteam.mycall();
 
-function fn (){
-    console.log("Hellow i am");
+// function fn (){
+//     console.log("Hellow i am");
+// }
+// fn.mycall();
+
+
+Function.prototype.mycall=function(){
+    //function is send as a this
+    let req=this;
+    //add that function to obj
+    ironman.req=req;
+   // with that obj your function
+    ironman.req();
 }
-fn.mycall();
+cap.pteam.mycall(ironman);
