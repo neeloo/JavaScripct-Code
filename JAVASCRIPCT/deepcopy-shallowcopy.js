@@ -29,3 +29,8 @@ cp.ln="singh";
 console.log(p)
 console.log(cp);
 
+
+let cn={...p};
+
+console.log(cn)
+
