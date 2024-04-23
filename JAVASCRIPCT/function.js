@@ -10,9 +10,23 @@
 // fn.showfn();
 
 // variable- pass a parameter
-function fn(param){
-    console.log(param);
+// function fn(param){
+//     console.log(param);
+// }
+// fn("hello");      // parameter
+// fn([1,2,3,4]);   //array
+// fn({name:"nilu"})    ///object
+
+
+function fn(p){
+    console.log(p)
+    const vp=p();
+    console.log(vp);
+    return "outer fn"
 }
-fn("hello");
-fn([1,2,3,4]);
-fn({name:"nilu"})
+fn(smaller);
+function smaller(){
+    console.log("i ams maller")
+    return "hello";
+
+}
