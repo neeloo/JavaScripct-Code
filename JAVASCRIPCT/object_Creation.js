@@ -35,6 +35,7 @@
 // console.log(obj2);
 
 // create obj with parent
+/*
 let obj={
     // property
     name:"nilu",
@@ -62,3 +63,53 @@ console.log(obj.isPrototypeOf(obj2));
 for(let i in obj2){
     console.log(i);
 }
+*/
+
+
+// function constructer
+/*
+function p(name, age) {
+    this.name = name;
+    this.age = age;
+    this.say = function () {
+        console.log(`Hi  i am ${this.name} and ${this.age} old`);
+    }
+}
+const n= new p("nilu",26);
+const s= new p("spv",26)
+console.log(n);
+console.log(s)
+n.say();
+s.say()
+*/
+
+// class constructer
+class p {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    say() {
+        console.log(`Hi  i am ${this.name} and ${this.age} old`);
+    }
+}
+
+const n = new p("nilu", 26);
+const s = new p("spv", 26)
+// console.log(n);
+// console.log(s)
+n.say();
+s.say()
+
+
+// extend calss
+class superman extends p {
+    constructor(name, age) {
+        super(name, age)
+    }
+    sayhi() {
+        console.log(`Hi  i am ${this.name} and ${this.age} old`);
+    }
+}
+const l = new superman("anu", 23);
+l.sayhi();
