@@ -48,8 +48,6 @@ function memo(fn){
         }
     }
 }
-
-
 let d=memo(cal);
 console.time();
 d(5);
