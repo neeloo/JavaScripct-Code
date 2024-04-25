@@ -132,15 +132,21 @@
 // infinite curry
 function counter(a) {
     let count = 0;
-    if (a == 0) { count++; return count; }
-    else {
+     if (a == 0) { count++; return count; }
+     else {
+        count++;
         return function inner(a) {
             count++;
             if (a == 0) { return count; }
             else { return inner; }
+
         }
     }
 }
 console.log(counter(0));  //1
 console.log(counter()(0)) //2
 console.log(counter()()(0))  //3
+
+
+
+
