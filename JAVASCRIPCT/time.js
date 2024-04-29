@@ -8,7 +8,7 @@
 
 
 
-// // cleartimeout()
+// // cleartimeout()*********
 // // console.log("before")
 // // function cb1() {
 // //     console.log("i  will explosive")
@@ -22,7 +22,7 @@
 // // console.log("after")
 
 
-// // setInterval()
+// // setInterval()******************
 // // console.log("before");
 // // function cb(){
 // //     console.log("interval call")
@@ -30,7 +30,7 @@
 // // setInterval(cb,2000);
 // // console.log("after")
 
-// // clearInterval()
+// // clearInterval()*****************
 // // console.log("before");
 // // function cb(){
 // //     console.log("interval call")
