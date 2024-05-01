@@ -1,4 +1,5 @@
 // /**setTimeout() and cleartimeout() */
+
 // console.log("before")
 // function fn(){
 //     console.log("i  will explosive")
@@ -9,6 +10,7 @@
 
 
 // // cleartimeout()*********
+
 // console.log("before")
 // function cb1() {
 //     console.log("i  will explosive")
@@ -23,6 +25,7 @@
 
 
 // // // setInterval()******************
+
 // console.log("before");
 // function cb(){
 //     console.log("interval call")
@@ -31,6 +34,7 @@
 // console.log("after")
 
 // // clearInterval()*****************
+
 // console.log("before");
 // function cb(){
 //     console.log("interval call")
@@ -84,6 +88,11 @@
 //     cl(obj);
 // }
 // setTimeout(cl,2000)
+
+
+
+
+
 
 
 
