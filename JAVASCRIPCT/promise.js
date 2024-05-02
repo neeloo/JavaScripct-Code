@@ -90,6 +90,7 @@ p.then(function (d) {
 
 
 // QUESTION ->promisifiy fs.readfile into a promises
+
 let fs=require("fs");
 console.log("before");
 function fn(filepath){
@@ -100,6 +101,7 @@ function fn(filepath){
         })
     })
 }
+
 const p=fn("./f1.txt");
 p.then(function(fu){console.log("file:"+fu)})
 p.catch(function(e){ console.log("file:"+e)})
