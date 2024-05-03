@@ -28,6 +28,7 @@ console.log("before");
  * catch-> is also a event listerner on promises ->when function promises is rejected(task is fail)
  * /
  /*
+ 
 const fs = require("fs");
 const p = fs.promises.readFile("./f1.txt");
 p.then(function (futureV) {
@@ -36,6 +37,7 @@ p.then(function (futureV) {
 p.catch(function (error) {
     console.log("file" + error);
 })
+
 */
 
 // chaining promises****************
