@@ -29,6 +29,7 @@ console.log("before");
  * /
  /*
  
+
 const fs = require("fs");
 const p = fs.promises.readFile("./f1.txt");
 p.then(function (futureV) {
@@ -39,6 +40,8 @@ p.catch(function (error) {
 })
 
 */
+
+
 
 // chaining promises****************
 
